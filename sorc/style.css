@@ -1,0 +1,160 @@
+ /*===== VARIABLES CSS =====*/
+ 
+ :root {
+     --text-color: #37094d;
+     --body-color: #fefbfb;
+ }
+ /*========== Variables Dark theme ==========*/
+ 
+ body.dark-theme {
+     --body-color: #251d1e;
+     --text-color: #fefbfb;
+ }
+ /*========== Button Dark/Light ==========*/
+ 
+ .change-theme {
+     right: 2.2rem;
+     top: 2.2rem;
+     font-size: 2rem;
+     cursor: pointer;
+     color: #e8e8f3
+ }
+ 
+ body {
+     background-color: var(--body-color);
+     color: var(--text-color);
+     line-height: 1.6;
+     font-family: "Tajawal", sans-serif;
+ }
+ 
+ img {
+     max-width: 100%;
+     height: auto;
+ }
+ 
+ .container {
+     max-width: 968px;
+     margin-left: 1rem;
+     margin-right: 1rem;
+ }
+ 
+ .grid {
+     display: grid;
+ }
+ 
+ .home__img {
+     width: 280px;
+     justify-self: center;
+     padding: 20%;
+ }
+ 
+ .home__title {
+     font-size: 2rem;
+     font-weight: 800;
+     margin-bottom: 1rem;
+ }
+ 
+ .home__description {
+     margin-bottom: 1.5rem;
+ }
+ /*========== BUTTONS ==========*/
+ 
+ .button {
+     display: inline-block;
+     background-color: #b4155f;
+     color: #fff;
+     padding: 1rem 1.5rem;
+     border-radius: 0.5rem;
+     font-weight: 600;
+     transition: 0.3s;
+ }
+ /* Footer */
+ 
+ .back__img {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     max-width: 1366px;
+     margin: auto;
+     padding: 1.5rem;
+     background-color: #510f70;
+ }
+ 
+ footer {
+     background-color: #b4155f;
+     height: 15vh;
+     margin-top: 2rem;
+     padding: 2rem 0;
+ }
+ 
+ .footer-section {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     max-width: 1366px;
+     margin: 0 auto;
+     padding: 0 5rem;
+ }
+ 
+ .footer-section p {
+     font-size: 1.2rem;
+     margin-bottom: 1rem;
+     color: #fff;
+ }
+ 
+ .footer-section .socials {
+     margin-bottom: 1rem;
+ }
+ 
+ .footer-section .socials i {
+     padding: 0 0.5rem;
+     font-size: 1.6rem;
+ }
+ 
+ .footer-section .socials i:hover {
+     color: #e8e8f3;
+     cursor: pointer;
+ }
+ 
+ @media screen and (min-width: 576px) {
+     .container {
+         grid-template-columns: repeat(2, 1fr);
+         align-items: center;
+         padding: 5rem 2rem 0;
+         margin: auto;
+     }
+     .home__img {
+         width: 100%;
+         order: 1;
+     }
+ }
+ 
+ ul.nav {
+     margin: flex;
+     padding: 0.5rem;
+     list-style: none;
+     height: 36px;
+     line-height: 36px;
+     background: #600277;
+     /* you can change the backgorund color here. */
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 13px;
+ }
+ 
+ ul.nav li {
+     border-right: 0.5px;
+     /* you can change the border color matching to your background color */
+     float: left;
+ }
+ 
+ ul.nav a {
+     display: flex;
+     padding: 0 28px 0;
+     color: #ffffff;
+     text-decoration: none;
+ }
+ 
+ ul.nav a:hover,
+ ul.nav li.current a {
+     background: #b4155f;
+ }
